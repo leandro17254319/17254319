@@ -1,0 +1,19 @@
+#include <stdio.h>
+#define DESCONTO 0.10  // Definindo a constante DESCONTO como 10%
+
+int main()
+{
+    float preco_original, preco_com_desconto;
+
+    // Solicitando ao usuário que insira o preço do produto
+    printf("Digite o preço original do produto: ");
+    scanf("%f", &preco_original);
+
+    // Calculando o preço com desconto
+    preco_com_desconto = preco_original - (preco_original * DESCONTO);
+
+    // Exibindo o resultado
+    printf("O preço com desconto de 10%% é: %.2f\n", preco_com_desconto);
+
+    return 0;
+}
